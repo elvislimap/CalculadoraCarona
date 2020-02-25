@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Adicionar pessoa
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Adicionar pessoa</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-item>
+      <ion-label position="floating" autofocus="true">Nome</ion-label>
+      <ion-input [(ngModel)]="pessoa.Nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating" inputmode="tel">Whatsapp</ion-label>
+      <ion-input [(ngModel)]="pessoa.Whatsapp"></ion-input>
+    </ion-item>
+
+    <br />
+
+    <ion-button color="dark" expand="full" size="large" (click)="salvar()">Salvar</ion-button>
+  </div>
+
+</ion-content>

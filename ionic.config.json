@@ -1,0 +1,8 @@
+{
+  "name": "CalculadoraCarona",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}
